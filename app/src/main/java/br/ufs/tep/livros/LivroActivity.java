@@ -64,8 +64,13 @@ public class LivroActivity extends ActionBarActivity {
                 livro.setId(id);
                 bd.deleteLivro(livro);
                 bd.updateLivro(livro);
+                nome.setText("");
+                autor.setText("");
+                ano.setText("");
+                remover.setEnabled(false);
                 Toast.makeText(getBaseContext(), "Livro removido com sucesso.",
                         Toast.LENGTH_SHORT).show();
+
             }
         });
 
