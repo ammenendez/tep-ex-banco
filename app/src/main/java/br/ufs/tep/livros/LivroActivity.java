@@ -28,7 +28,6 @@ public class LivroActivity extends ActionBarActivity {
         alterar = (Button) findViewById(R.id.btUpdate);
         remover = (Button) findViewById(R.id.btDelete);
 
-
         nome = (EditText) findViewById(R.id.etNome);
         autor = (EditText) findViewById(R.id.etAutor);
         ano = (EditText) findViewById(R.id.etAno);
@@ -63,7 +62,6 @@ public class LivroActivity extends ActionBarActivity {
                 Livro livro = new Livro();
                 livro.setId(id);
                 bd.deleteLivro(livro);
-                bd.updateLivro(livro);
                 nome.setText("");
                 autor.setText("");
                 ano.setText("");

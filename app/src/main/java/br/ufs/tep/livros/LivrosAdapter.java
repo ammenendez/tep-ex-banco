@@ -38,10 +38,8 @@ public class LivrosAdapter extends ArrayAdapter<Livro> {
         titulo.setText(elementos.get(position).getTitulo());
         autor.setText(elementos.get(position).getAutor());
         ano.setText(Integer.toString(elementos.get(position).getAno()));
-//        ano.setText(elementos.get(position).getAno());
 
         return rowView;
     }
-
 
 }

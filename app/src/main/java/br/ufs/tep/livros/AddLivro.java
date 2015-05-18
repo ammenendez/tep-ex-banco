@@ -42,7 +42,6 @@ public class AddLivro extends ActionBarActivity {
                 Toast.makeText(getBaseContext(), "Livro inserido com sucesso.",
                         Toast.LENGTH_SHORT).show();
 
-
             }
         });
 
